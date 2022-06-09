@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/trackingFragment2"
+        android:title="Главная"
+        android:icon="@drawable/ic_session"/>
+
+    <item android:id="@+id/statisticsFragment2"
+        android:title="Статистика"
+        android:icon="@drawable/ic_graph"/>
+
+    <item android:id="@+id/friendsFragment"
+        android:title="Друзья"
+        android:icon="@drawable/ic_friends"/>
+
+    <item android:id="@+id/catalogFilterFragment"
+        android:title="Каталог"
+        android:icon="@drawable/ic_catalog"/>
+
+    <item android:id="@+id/settingsFragment2"
+        android:title="Профиль"
+        android:icon="@drawable/ic_settings"/>
+
+
+
+
+
+</menu>

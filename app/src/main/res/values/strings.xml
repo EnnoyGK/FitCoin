@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">PedometerAppKt</string>
+    <string-array name="filter_options">
+        <item>Date</item>
+        <item>Distance</item>
+        <item>Steps</item>
+        <item>Average Speed</item>
+    </string-array>
+    <string name="google_maps_key">AIzaSyCGayA_Di4jHFQwi_WAmIlAzV8xrfysiW0</string>
+</resources>

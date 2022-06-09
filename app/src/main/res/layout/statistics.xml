@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E5E5E5">
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/barChart"
+        android:layout_width="330dp"
+        android:layout_height="183dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="71dp"
+        android:layout_marginEnd="41dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTotalCoins" />
+
+    <TextView
+        android:id="@+id/tvTotalCoins"
+        android:layout_width="144dp"
+        android:layout_height="104dp"
+        android:layout_marginStart="80dp"
+
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/text_rounded_corner"
+        android:fontFamily="@font/marmelad"
+        android:lineSpacingExtra="8sp"
+        android:paddingTop="20dp"
+        android:text="Всего монет \n0"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/tvTotalCalories"
+        app:layout_constraintTop_toBottomOf="@+id/tvTotalDistance" />
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:background="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvToolbarTitle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/fira_sans_medium"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Статистика"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </com.google.android.material.appbar.MaterialToolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:id="@+id/tvTotalSteps"
+        android:layout_width="144dp"
+        android:layout_height="104dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="27dp"
+
+        android:background="@drawable/text_rounded_corner"
+        android:fontFamily="@font/marmelad"
+        android:lineSpacingExtra="8sp"
+        android:paddingTop="20dp"
+        android:text="Всего шагов \n0"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout" />
+
+    <TextView
+        android:id="@+id/tvTotalDistance"
+        android:layout_width="144dp"
+        android:layout_height="104dp"
+        android:layout_marginStart="80dp"
+
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/text_rounded_corner"
+        android:fontFamily="@font/marmelad"
+        android:lineSpacingExtra="8sp"
+        android:paddingTop="20dp"
+        android:text="Расстояние \n 0"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/tvTotalSteps"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout" />
+
+    <TextView
+        android:id="@+id/tvTotalCalories"
+        android:layout_width="144dp"
+        android:layout_height="104dp"
+        android:layout_marginStart="40dp"
+
+        android:layout_marginTop="44dp"
+        android:background="@drawable/text_rounded_corner"
+        android:fontFamily="@font/marmelad"
+        android:lineSpacingExtra="8sp"
+        android:paddingTop="20dp"
+        android:text="Всего калорий \n0"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTotalSteps" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

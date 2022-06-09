@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E5E5E5">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="136dp"
+        android:layout_height="136dp"
+        android:layout_marginStart="141dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="142dp"
+        android:background="@drawable/text_rounded_corner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etLogin"
+        android:layout_width="232dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="70dp"
+        android:background="@drawable/text_rounded_corner"
+        android:ems="10"
+        android:fontFamily="@font/marmelad"
+        android:hint="Логин"
+        android:inputType="textPersonName"
+        android:paddingStart="10dp"
+        android:singleLine="true"
+        android:textColor="#000000"
+        android:textColorHint="@color/black"
+        app:circularflow_angles="15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etPwd"
+        android:layout_width="232dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="70dp"
+        android:background="@drawable/text_rounded_corner"
+        android:ems="10"
+        android:fontFamily="@font/marmelad"
+        android:hint="Пароль"
+
+        android:inputType="textPassword"
+        android:paddingLeft="10dp"
+        android:singleLine="true"
+        android:textColor="#000000"
+        android:textColorHint="@color/black"
+        app:circularflow_angles="15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etLogin" />
+
+    <Button
+        android:id="@+id/btnApplyChanges"
+        android:layout_width="232dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="89dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="90dp"
+        android:backgroundTint="#F6DDFF"
+        android:fontFamily="@font/marmelad"
+        android:text="Войти"
+        android:textColor="#000000"
+        app:cornerRadius="100dp"
+        app:iconTint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPwd" />
+
+    <Button
+        android:id="@+id/tvRegister"
+        android:layout_width="232dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="89dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="90dp"
+        android:backgroundTint="#F6DDFF"
+        android:fontFamily="@font/marmelad"
+        android:text="Регистрация"
+        android:textColor="#000000"
+        app:cornerRadius="100dp"
+        app:iconTint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnApplyChanges" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

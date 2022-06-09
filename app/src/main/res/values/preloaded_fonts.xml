@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/acme</item>
+        <item>@font/allerta</item>
+        <item>@font/amiko</item>
+        <item>@font/b612_mono</item>
+        <item>@font/fira_sans_medium</item>
+        <item>@font/fira_sans_thin</item>
+        <item>@font/marmelad</item>
+    </array>
+</resources>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/new_nav_graph"
+    app:startDestination="@id/setupFragment2">
+    <fragment
+        android:id="@+id/setupFragment2"
+        android:name="com.example.pedometerappkt.ui.fragments.SetupFragment"
+        android:label="SetupFragment" >
+        <action
+            android:id="@+id/action_setupFragment2_to_trackingFragment2"
+            app:destination="@id/trackingFragment2" />
+        <action
+            android:id="@+id/action_setupFragment2_to_registerFragment"
+            app:destination="@id/registerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/trackingFragment2"
+        android:name="com.example.pedometerappkt.ui.fragments.TrackingFragment"
+        android:label="TrackingFragment" >
+        <action
+            android:id="@+id/action_trackingFragment2_to_statisticsFragment2"
+            app:destination="@id/statisticsFragment2" />
+        <action
+            android:id="@+id/action_trackingFragment2_to_settingsFragment2"
+            app:destination="@id/settingsFragment2" />
+        <action
+            android:id="@+id/action_trackingFragment2_to_catalogFilterFragment"
+            app:destination="@id/catalogFilterFragment" />
+        <action
+            android:id="@+id/action_trackingFragment2_to_friendsFragment"
+            app:destination="@id/friendsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment2"
+        android:name="com.example.pedometerappkt.ui.fragments.SettingsFragment"
+        android:label="SettingsFragment" >
+        <action
+            android:id="@+id/action_settingsFragment2_to_statisticsFragment2"
+            app:destination="@id/statisticsFragment2" />
+        <action
+            android:id="@+id/action_settingsFragment2_to_trackingFragment2"
+            app:destination="@id/trackingFragment2" />
+        <action
+            android:id="@+id/action_settingsFragment2_to_catalogFilterFragment"
+            app:destination="@id/catalogFilterFragment" />
+        <action
+            android:id="@+id/action_settingsFragment2_to_friendsFragment"
+            app:destination="@id/friendsFragment" />
+        <action
+            android:id="@+id/action_settingsFragment2_to_setupFragment2"
+            app:destination="@id/setupFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/statisticsFragment2"
+        android:name="com.example.pedometerappkt.ui.fragments.StatisticsFragment"
+        android:label="StatisticsFragment" >
+        <action
+            android:id="@+id/action_statisticsFragment2_to_settingsFragment22"
+            app:destination="@id/settingsFragment2" />
+        <action
+            android:id="@+id/action_statisticsFragment2_to_trackingFragment2"
+            app:destination="@id/trackingFragment2" />
+        <action
+            android:id="@+id/action_statisticsFragment2_to_catalogFilterFragment"
+            app:destination="@id/catalogFilterFragment" />
+        <action
+            android:id="@+id/action_statisticsFragment2_to_friendsFragment"
+            app:destination="@id/friendsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.pedometerappkt.ui.fragments.RegisterFragment"
+        android:label="RegisterFragment" >
+        <action
+            android:id="@+id/action_registerFragment_to_trackingFragment2"
+            app:destination="@id/trackingFragment2" />
+    </fragment>
+    <action
+        android:id="@+id/action_global_trackingFragment2"
+        app:destination="@id/trackingFragment2" />
+    <fragment
+        android:id="@+id/catalogFilterFragment"
+        android:name="com.example.pedometerappkt.ui.fragments.CatalogFilterFragment"
+        android:label="CatalogFilterFragment" >
+        <action
+            android:id="@+id/action_catalogFilterFragment_to_statisticsFragment2"
+            app:destination="@id/statisticsFragment2" />
+        <action
+            android:id="@+id/action_catalogFilterFragment_to_settingsFragment2"
+            app:destination="@id/settingsFragment2" />
+        <action
+            android:id="@+id/action_catalogFilterFragment_to_trackingFragment2"
+            app:destination="@id/trackingFragment2" />
+        <action
+            android:id="@+id/action_catalogFilterFragment_to_shopsFragment"
+            app:destination="@id/shopsFragment" />
+        <action
+            android:id="@+id/action_catalogFilterFragment_to_shopsBeautyFragment"
+            app:destination="@id/shopsBeautyFragment" />
+        <action
+            android:id="@+id/action_catalogFilterFragment_to_shopsFoodFragment"
+            app:destination="@id/shopsFoodFragment" />
+        <action
+            android:id="@+id/action_catalogFilterFragment_to_friendsFragment"
+            app:destination="@id/friendsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/shopsFragment"
+        android:name="com.example.pedometerappkt.ui.fragments.ShopsFragment"
+        android:label="ShopsFragment" >
+        <action
+            android:id="@+id/action_shopsFragment_to_catalogFilterFragment"
+            app:destination="@id/catalogFilterFragment" />
+        <action
+            android:id="@+id/action_shopsFragment_to_sportMasterFragment"
+            app:destination="@id/sportMasterFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sportMasterFragment"
+        android:name="com.example.pedometerappkt.ui.fragments.SportMasterFragment"
+        android:label="SportMasterFragment" >
+        <action
+            android:id="@+id/action_sportMasterFragment_to_shopsFragment"
+            app:destination="@id/shopsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/likeFoodFragment"
+        android:name="com.example.pedometerappkt.ui.fragments.LikeFoodFragment"
+        android:label="LikeFoodFragment" >
+        <action
+            android:id="@+id/action_likeFoodFragment_to_shopsFoodFragment"
+            app:destination="@id/shopsFoodFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bilitaFragment"
+        android:name="com.example.pedometerappkt.ui.fragments.BilitaFragment"
+        android:label="BilitaFragment" >
+        <action
+            android:id="@+id/action_bilitaFragment_to_shopsBeautyFragment"
+            app:destination="@id/shopsBeautyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/shopsBeautyFragment"
+        android:name="com.example.pedometerappkt.ui.fragments.ShopsBeautyFragment"
+        android:label="ShopsBeautyFragment" >
+        <action
+            android:id="@+id/action_shopsBeautyFragment_to_catalogFilterFragment"
+            app:destination="@id/catalogFilterFragment" />
+        <action
+            android:id="@+id/action_shopsBeautyFragment_to_bilitaFragment"
+            app:destination="@id/bilitaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/shopsFoodFragment"
+        android:name="com.example.pedometerappkt.ui.fragments.ShopsFoodFragment"
+        android:label="ShopsFoodFragment" >
+        <action
+            android:id="@+id/action_shopsFoodFragment_to_catalogFilterFragment"
+            app:destination="@id/catalogFilterFragment" />
+        <action
+            android:id="@+id/action_shopsFoodFragment_to_likeFoodFragment"
+            app:destination="@id/likeFoodFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/friendsFragment"
+        android:name="com.example.pedometerappkt.ui.fragments.FriendsFragment"
+        android:label="FriendsFragment" >
+        <action
+            android:id="@+id/action_friendsFragment_to_trackingFragment2"
+            app:destination="@id/trackingFragment2" />
+        <action
+            android:id="@+id/action_friendsFragment_to_statisticsFragment2"
+            app:destination="@id/statisticsFragment2" />
+        <action
+            android:id="@+id/action_friendsFragment_to_catalogFilterFragment"
+            app:destination="@id/catalogFilterFragment" />
+        <action
+            android:id="@+id/action_friendsFragment_to_settingsFragment2"
+            app:destination="@id/settingsFragment2" />
+    </fragment>
+</navigation>
